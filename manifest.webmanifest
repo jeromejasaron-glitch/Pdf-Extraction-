@@ -1,0 +1,20 @@
+{
+  "name": "Encre",
+  "short_name": "Encre",
+  "description": "Rend tes PDF manuscrits cherchables",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0b1d",
+  "theme_color": "#0c0b1d",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "share_target": {
+    "action": "./?share=1",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {"files": [{"name": "pdf", "accept": ["application/pdf", ".pdf"]}]}
+  }
+}
